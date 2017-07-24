@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.bignerdranch.android.aidl">
+          package="com.bignerdranch.android.aidlclient">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -17,13 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <service
-            android:name=".IRemoteService"
-            android:process=":remote">
-            <intent-filter>
-                <action android:name="com.bignerdranch.android.aidl.IRemoteService" />
-            </intent-filter>
-        </service>
     </application>
 
 </manifest>
